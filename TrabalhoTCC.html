@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮Aprendendo🎮</title>
+    <link rel="stylesheet" href="css/desaing-Trabalho.css">
+</head>
+<body>
+    <header>
+    <H2>🎮APRENDENDO <br>E<br> APERFEIÇOANDO🎮</H2>
+    
+    </header>
+    
+    --BOTÃO DE INSERIR O NOME E PARA SEGUIR PARA A PROXIMA PAGINA--
+    <input type="text" id="campoTexto">
+    <a href="pagina-jogos.html" >
+        <button onclick="salvar()">
+            salvar
+        </button>
+    </a>
+
+    
+    <main>
+        <script>
+        function salvar() {
+            let texto = document.getElementById("campoTexto").value;
+            localStorage.setItem("meuTexto", texto);
+        }
+        </script>
+        
+    </main>
+
+    --RODAPÉ--
+    <footer> 
+        <p>Contato: joaomiguel.o.a008@gmail.com</p> --EMAIL DE UM RESPONSÁVEL PELO SITE--
+        <p>Redes sociais: @joao miguel</p>
+        <p>&copy; 2024 leis de informações</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+header, footer{
+    font-family: Arial sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-size: 30px;
+}
+
+body{
+    background-color:#1a0033;
+    color: white
+}
+button, input{
+    display: block;
+    margin: auto;
+    border: 2px solid #333;
+    border-radius: 50px;  /* arredondado */
+    padding: 10px 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: aqua;
+    transform: translateY(5px);
+}
+input:hover{
+    background-color: aqua;
+}
+footer{
+    font-size: 9px
+}
