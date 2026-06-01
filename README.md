@@ -12,8 +12,10 @@ Aqui segue meu projeto de TCC em conjunto de um grupo
         -O que ele tem q ter?
             1º Titulo do da pagina(tipo: pagina de jogos)
             2º Uma linha que deverá ter alguns topicos simples:
-                -HOME;
+                -HOME(MANDA DE VOLTA PARA PAGINA INICIAL);
                 -PLACAR(TERÁ TODAS A INFORMAÇÕES DE PONTUAÇÃO DO JOGADO EM QUESTÃO)
                 -RANKING(TERÁ  UM RANKING ENTRE JOGADORES);
                 -JOGOS: TENDO NO INICIO 12 JOGOS, ONDE 6 SÃO DE EXATAS E O RESTO DE LINGUAGENS.
+            3ºListas de jogos(Tendo 12 jogos, podemos dizer que podera ser dividido em 4 linhas e em 3 colunas)
+            
 
