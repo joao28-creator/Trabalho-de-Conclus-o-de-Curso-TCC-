@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Matemático</title>
+</head>
+<body>
+
+    <div id="conteudo"></div>
+
+    <script>
+
+        let vidas;
+        let acertos;
+        let pergunta;
+        let respostaCorreta;
+
+        function iniciarJogo() {
+
+            vidas = 3;
+            acertos = 0;
+            pergunta = 1;
+
+            document.getElementById("conteudo").innerHTML = `
+                <h1>Quiz Matemático</h1>
+
+                <p id="info"></p>
+
+                <p id="conta"></p>
+
+                <div id="alternativas"></div>
+
+                <p id="mensagem"></p>
+            `;
+
+            gerarPergunta();
+        }
+
+        function atualizarInfo() {
+
+            document.getElementById("info").innerHTML =
+                "Vidas: " + vidas +
+                " | Acertos: " + acertos +
+                " | Pergunta: " + pergunta + "/10";
+        }
+
+        function gerarPergunta() {
+
+            if (vidas <= 0 || pergunta > 10) {
+                fimDeJogo();
+                return;
+            }
+
+            atualizarInfo();
+
+            let numero1 = Math.floor(Math.random() * 10) + 1;
+            let numero2 = Math.floor(Math.random() * 10) + 1;
+
+            let operacoes = ["+", "-", "*"];
+
+            let operacao =
+                operacoes[Math.floor(Math.random() * operacoes.length)];
+
+            if (operacao === "+") {
+                respostaCorreta = numero1 + numero2;
+            }
+            else if (operacao === "-") {
+                respostaCorreta = numero1 - numero2;
+            }
+            else {
+                respostaCorreta = numero1 * numero2;
+            }
+
+            document.getElementById("conta").innerHTML =
+                numero1 + " " + operacao + " " + numero2 + " = ?";
+
+            criarAlternativas();
+        }
+
+        function criarAlternativas() {
+
+            let opcoes = [respostaCorreta];
+
+            while (opcoes.length < 4) {
+
+                let errada =
+                    respostaCorreta +
+                    Math.floor(Math.random() * 11) - 5;
+
+                if (
+                    !opcoes.includes(errada) &&
+                    errada !== respostaCorreta
+                ) {
+                    opcoes.push(errada);
+                }
+            }
+
+            opcoes.sort(() => Math.random() - 0.5);
+
+            let html = "";
+
+            for (let i = 0; i < opcoes.length; i++) {
+
+                html += `
+                    <button onclick="verificarResposta(${opcoes[i]})">
+                        ${opcoes[i]}
+                    </button>
+                    <br><br>
+                `;
+            }
+
+            document.getElementById("alternativas").innerHTML = html;
+        }
+
+        function verificarResposta(respostaEscolhida) {
+
+            if (respostaEscolhida === respostaCorreta) {
+
+                acertos++;
+
+                document.getElementById("mensagem").innerHTML =
+                    "Resposta correta!";
+            }
+            else {
+
+                vidas--;
+
+                document.getElementById("mensagem").innerHTML =
+                    "Resposta errada! A correta era: " +
+                    respostaCorreta;
+            }
+
+            pergunta++;
+
+            setTimeout(() => {
+
+                document.getElementById("mensagem").innerHTML = "";
+
+                gerarPergunta();
+
+            }, 1000);
+        }
+
+        function fimDeJogo() {
+
+            let resultado;
+
+            if (vidas <= 0) {
+                resultado = "Você ficou sem vidas!";
+            }
+            else {
+                resultado = "Você completou as 10 perguntas!";
+            }
+
+            document.getElementById("conteudo").innerHTML = `
+                <h1>Fim de Jogo</h1>
+
+                <p>${resultado}</p>
+
+                <p>Acertos: ${acertos}</p>
+
+                <button onclick="iniciarJogo()">
+                    Reiniciar
+                </button>
+
+                <br><br>
+
+                <a href="TrabalhoTCC.html">
+                    <button>
+                        HOME
+                    </button>
+                </a>
+            `;
+        }
+
+        document.getElementById("conteudo").innerHTML = `
+            <h1>Quiz Matemático</h1>
+
+            <p>
+                Você possui 3 vidas para responder
+                10 perguntas.
+            </p>
+
+            <button onclick="iniciarJogo()">
+                Iniciar Jogo
+            </button>
+        `;
+
+    </script>
+
+</body>
+</html>
