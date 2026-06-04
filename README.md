@@ -3,8 +3,8 @@ Aqui segue meu projeto de TCC em conjunto de um grupo
 
     O ARQUIVO "TrabalhoTCC.html" É A PAGINA INICIAL DO SITE
         -O que ele tem?
-            #1ºEle inicia com o titulo do projeto;
-            #2º Botão "init" que é capaz de poder escrever, ode essa informação pode ser salva;
+            1ºEle inicia com o titulo do projeto;
+            2º Botão "init" que é capaz de poder escrever, ode essa informação pode ser salva;
             3º Botão(Button) salvar que serve para salvar a informação do "init" e seguir para a pagina de jogos;
             4º Roda-pé: É parte que tem algumas infotmações, um contato do desenvolvedor princial.
     
@@ -20,4 +20,5 @@ Aqui segue meu projeto de TCC em conjunto de um grupo
     
     O PRIMEIRO JOGO É UM QUIZ MATEMÁTICO, APELIDADO DE QUAL O RESULTADO, QUE É DETERMINADO PELO ARQUIVO "qual-resultado.html"
         -O que ele tem? o que faz?
+              -sendo literalmente um jogo de contas, tem como principio sortear 2 números, uma operação matemática e mais 4 valores que confundem
 
