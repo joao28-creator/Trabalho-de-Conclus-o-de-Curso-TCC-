@@ -17,5 +17,7 @@ Aqui segue meu projeto de TCC em conjunto de um grupo
                 -RANKING(TERÁ  UM RANKING ENTRE JOGADORES);
                 -JOGOS: TENDO NO INICIO 12 JOGOS, ONDE 6 SÃO DE EXATAS E O RESTO DE LINGUAGENS.
             3ºListas de jogos(Tendo 12 jogos, podemos dizer que podera ser dividido em 4 linhas e em 3 colunas)
-            
+    
+    O PRIMEIRO JOGO É UM QUIZ MATEMÁTICO, APELIDADO DE QUAL O RESULTADO, QUE É DETERMINADO PELO ARQUIVO "qual-resultado.html"
+        -O que ele tem? o que faz?
 
