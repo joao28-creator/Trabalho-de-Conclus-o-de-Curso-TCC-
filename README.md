@@ -1,5 +1,9 @@
 # Trabalho-de-Conclus-o-de-Curso-TCC-
 Aqui segue meu projeto de TCC em conjunto de um grupo
+OQ O SITE TEM?
+    -PAGINA INICIAL;
+    -PAGINA COM OS JOGOS;
+    -PAGINA DE COMO SE JOGA E QUAL A EXPLICAÇÃO DE CADA ENSINAMENTO.
 
     O ARQUIVO "TrabalhoTCC.html" É A PAGINA INICIAL DO SITE
         -O que ele tem?
@@ -27,5 +31,7 @@ Aqui segue meu projeto de TCC em conjunto de um grupo
                 -respostas;
                 -HOME: LEVA PARA PAGINA DE JOGOS;
                 -TENTAR NOVAMENTE: REINICIA O JOGO.
+            3ºNome e pontuaçã:  fica no canto superior, onde podera levar para o ranking
+
 
 
