@@ -3,15 +3,24 @@
 }
 
 header{
-    /*background-image: url("../img/logo_site.png");*/
-    width: 120px;
-    height: auto;
+    background-color: #00040C;
+    text-align: center;
+    font-size: 250px;
 }
 
-/*body{
+.logo{
+    width: 425px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+body{
     background-image: url("../img/Imagem_inicial.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-}*/
+}
