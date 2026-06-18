@@ -8,12 +8,13 @@
 
     <div id="conteudo"></div>
 
-    <script>
+    <script> /*PARET DO JAVASCRIPT*/
 
-        let vidas;
-        let acertos;
-        let pergunta;
-        let respostaCorreta;
+        /*VARIÁVEIS GLOBAIS*/
+        let vidas; /*TENTATIVAS*/
+        let acertos; /*QUANTIDADE DE ACERTOS*/
+        let pergunta; /*TOTAL DE PERGUNTAS (10)*/
+
 
         function iniciarJogo() {
 
@@ -53,8 +54,8 @@
 
             atualizarInfo();
 
-            let numero1 = Math.floor(Math.random() * 10) + 1;
-            let numero2 = Math.floor(Math.random() * 10) + 1;
+            let numero1 = Math.floor(Math.random() * 1000) + 1;
+            let numero2 = Math.floor(Math.random() * 1000) + 1;
 
             let operacoes = ["+", "-", "*"];
 
@@ -185,7 +186,6 @@
                 Iniciar Jogo
             </button>
         `;
-
     </script>
 
 </body>

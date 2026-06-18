@@ -1,9 +1,10 @@
-:root{
-    --cor-Botãos : aqua;
+:root{ /*PADRÔES DE COISAS*/
+    --cor-botão: aqua;
     --fonte-padrão: Comic Sans MS;
-    --text-align: center;
-}
+    --cor-fundo-das-paginas: #1a0033;
 
+
+}
 
 
 
@@ -18,35 +19,43 @@ header{
 }
 
 body{
-    background-color:#1a0033;
+    background-color: var(--cor-fundo-das-paginas);
     color: white
 }
-#imput_botão{
-    display: block;
-    margin: auto;
-    border: 2px solid #333;
+
+.container-input-botao{
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* alinha verticalmente */
+    gap: 10px;               /* espaço entre eles */
+}
+
+.imput_botão{
+    border: 2px solid #fffefe;
     border-radius: 50px;  /* arredondado */
     padding: 10px 10px;
     cursor: pointer;
     font-family: var(--fonte-padrão)
 }
 
-#Titulop0{
-    display: block;
-    margin: auto;
-    border: 2px solid #333;
-    border-radius: 50px;  /* arredondado */
-    padding: 10px 10px;
-    cursor: pointer;
-    font-family: var(--fonte-padrão)
-}
 button:hover{
-    background-color: var(--cor-Botãos);
+    background-color: var(--cor-botão);
     transform: translateY(5px);
 }
 input:hover{
-    background-color: var(--cor-Botãos);
+    background-color: var(--cor-botão);
 }
+
+
+#Titulop0{
+    display: block;
+    border: 1px solid #333;
+    border-radius: 200px;  /* arredondado */
+    padding: 10px 10px;
+    font-family: var(--fonte-padrão);
+
+}
+
 footer{
     font-size: 9px
 }
