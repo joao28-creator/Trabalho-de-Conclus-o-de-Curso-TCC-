@@ -1,6 +1,7 @@
 :root{
     --cor-Botãos : aqua;
-    --fonte-padrão: Comic Sans MS
+    --fonte-padrão: Comic Sans MS;
+    --text-align: center;
 }
 
 
@@ -8,7 +9,7 @@
 
 header, footer{
     font-family: var(--fonte-padrão);
-    text-align: center;
+    text-align: var(--text-align);
     margin: 0;
     padding: 0;
 }
