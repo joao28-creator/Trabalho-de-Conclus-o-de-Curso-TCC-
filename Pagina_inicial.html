@@ -8,38 +8,38 @@
 </head>
 <body>
     <header><!--TITULO DO SITE-->
-        <button>
-                <img src="img/logo_site.png" alt="logo_site" class="logo">
-        </button>
+        <a>
+            <button class="logo">
+                <img src="img/logo_site.png" alt="logo_site">
+            </button>
+        </a>
+        
 
         
     </header>
 
    <!--BOTÃO DE INSERIR O NOME E PARA SEGUIR PARA A PROXIMA PAGINA-->
-   <div class = "container-input-botao">
-    <input type="text" class = "imput_botão">
-
-        <a href="pagina-jogos.html" >
-            <button onclick="salvar()" class="imput_botão">
-                salvar
-            </button>
-        </a>
-   </div>
-    
-
-    
-    <main>
-        <script>
-        function salvar() {
-            let texto = document.getElementById("campoTexto").value;
-            localStorage.setItem("meuTexto", texto);
-        }
-        </script>
+    <div class = "container-input-botao">
+        <img src="img/imagem_login.png" alt="">
         
-    </main>
+        <div class="formulario">
+            <p">Login</p>
+
+            <input type="text" placeholder="Nome">
+            <input type="password" placeholder="Senha">
+
+            <a href="pagina-jogos.html" >
+                <button onclick="salvar()">
+                salvar
+                </button>
+            </a>
+
+        </div>
+        
+   </div>
 
     <!--RODAPÉ-->
-    <footer> 
+    <footer class="rodape"> 
         <p>Contato: joaomiguel.o.a008@gmail.com</p> <!--EMAIL DE UM RESPONSÁVEL PELO SITE-->
         <p>Redes sociais: @joao miguel</p>
         <p>&copy; 2024 leis de informações</p>
