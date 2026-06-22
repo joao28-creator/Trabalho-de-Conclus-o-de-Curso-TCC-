@@ -1,0 +1,24 @@
+body{
+    background-image: url(../img/tela_f-jogos.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Centaur Now Caption;
+}
+
+.logo{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    background-size: 255px;
+}
+
+.logo img{
+    width: 225px;
+    height: auto;
+
+    top: 10px;
+    left: 10px;
+}
