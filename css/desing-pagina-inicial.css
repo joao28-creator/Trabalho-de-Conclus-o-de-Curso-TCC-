@@ -6,7 +6,6 @@ header{
 }
 
 .container-input-botao{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +20,7 @@ header{
 
 .formulario{
     position: absolute;
+        
 
 }
 
@@ -42,6 +42,24 @@ input{
 
 p{
     text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+button:hover, input:hover {
+    background-color: #fee29a;
+    cursor: pointer;
+}
+
+input{
+    border-radius: 9px;
+    font-family: Centaur Now Caption;
+}    
+
+button{
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: Centaur Now Caption;
 }
 
 .logo{
@@ -66,11 +84,5 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-}
-
-.rodape{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0);
-    align-items: center;
-    text-align: center;
+    font-family: Centaur Now Caption;
 }
