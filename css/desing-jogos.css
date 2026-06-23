@@ -11,14 +11,42 @@ body{
     border: none;
     background: transparent;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
-    background-size: 255px;
+    background-color: #ffffff00;
+
 }
 
 .logo img{
     width: 225px;
     height: auto;
 
-    top: 10px;
-    left: 10px;
+    top: 1px;
+    left: 1px;
+    position: absolute;
+}
+
+#tela img{
+    position: absolute;
+    left: 225px;
+    top: 25px;
+
+}
+
+.imagem{
+    width: 800px;
+    justify-items: center;
+}
+
+.jogo img{
+    width: 250px;
+    height: auto;
+}
+
+.jogo button, a{
+    border: none;
+    position: absolute;
+    left: 100px;
+    background: transparent;
+    cursor: pointer;
+    left: 212px;
+    top: 50px;
 }
