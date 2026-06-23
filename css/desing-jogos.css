@@ -1,5 +1,5 @@
-body{
-    background-image: url(../img/tela_f-jogos.jpeg);
+body{ 
+    background-image: url(../img/tela_f-jogos.jpeg);/*Imagem de fundo*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,42 +11,40 @@ body{
     border: none;
     background: transparent;
     cursor: pointer;
-    background-color: #ffffff00;
+
 
 }
 
 .logo img{
     width: 225px;
     height: auto;
-
+    position: absolute;
     top: 1px;
     left: 1px;
-    position: absolute;
 }
 
-#tela img{
+.menu_jogo{
+    width: 850px;
+    height: auto;
+
     position: absolute;
     left: 225px;
-    top: 25px;
-
 }
 
-.imagem{
-    width: 800px;
-    justify-items: center;
+.seta{
+    width: 150px;
+    height: auto;
+
+    position: absolute;
+    top: 220px;
+    left: 900px;
 }
 
 .jogo img{
-    width: 250px;
+    width: 400px;
     height: auto;
-}
 
-.jogo button, a{
-    border: none;
     position: absolute;
-    left: 100px;
-    background: transparent;
-    cursor: pointer;
-    left: 212px;
-    top: 50px;
+    top: 100px;
+    left: 600px;
 }

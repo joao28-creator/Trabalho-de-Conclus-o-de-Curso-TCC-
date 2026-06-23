@@ -1,8 +1,29 @@
+body{
+    background-image: url("../img/tela_f-inicio.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Centaur Now Caption;
+}
 
 header{
     background-color: #00000000;
     text-align: center;
     font-size: 150px;
+}
+
+.logo{
+    border: none;
+    background: transparent;
+}
+
+.logo img{
+    width: 225px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .container-input-botao{
@@ -46,7 +67,7 @@ p{
     text-decoration: underline;
 }
 
-button:hover, input:hover {
+#B_salvar:hover, input:hover {
     background-color: #fee29a;
     cursor: pointer;
 }
@@ -56,31 +77,8 @@ input{
     font-family: Centaur Now Caption;
 }    
 
-button{
+#B_salvar{
     border-radius: 9px;
     font-size: 20px;
-    font-family: Centaur Now Caption;
-}
-
-.logo{
-    border: none;
-    background: transparent;
-    cursor: pointer
-}
-
-.logo img{
-    width: 225px;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-body{
-    background-image: url("../img/tela_f-inicio.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
     font-family: Centaur Now Caption;
 }
