@@ -10,7 +10,7 @@
     <header>
         <a href="Pagina_inicial.html" >
             <button class="logo">
-                <img src="img/logo_site.png" alt="logo_site">
+                <img src="img/logo_site.png" alt="logo_site" id="logo">
             </button>
         </a>
 
@@ -18,13 +18,39 @@
 
     <div>
         <img src="img/menu_jogos.png" alt="" class="menu_jogo">
-        <img src="img/seta.png" alt="" class="seta">
 
-        <a href="qual-resultado.html" class="jogo">
-            <button>
-                <img src="img/imagem_jogo-dourada.png" alt="">
-            </button>
-        </a>
+        <script>
+        const dados = {
+            1: {
+                imagens: ["img/imagem_jogo-dourada.png","img/imagem_jogo-dourada.png","img/imagem_jogo-dourada.png"],
+                links: ["pagina1.html","pagina2.html","pagina3.html"],
+                i: 0
+            },
+            2: {
+                imagens: ["img/img2.png","img/img2b.png","img/img2c.png"],
+                links: ["qual-resultado.html","pagina5.html","pagina6.html"],
+                i: 0
+            }
+        };
+
+        function trocar(id){
+            const d = dados[id];
+
+            d.i = (d.i + 1) % d.imagens.length;
+
+            document.getElementById("img"+id).src = d.imagens[d.i];
+            document.getElementById("link"+id).href = d.links[d.i];
+        }
+        </script>
+
+
+        <button onclick="mudar_imagem()" class="botão">
+            <img id="seta" src="img/seta.png" width="300">
+
+        </button>
+
+
+        
     </div>
 
 

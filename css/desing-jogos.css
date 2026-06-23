@@ -11,8 +11,12 @@ body{
     border: none;
     background: transparent;
     cursor: pointer;
+}
 
-
+.botão{
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 .logo img{
@@ -23,21 +27,23 @@ body{
     left: 1px;
 }
 
+
 .menu_jogo{
     width: 850px;
     height: auto;
 
     position: absolute;
     left: 225px;
+    
 }
 
-.seta{
-    width: 150px;
+#seta{
+    width: 70px;
     height: auto;
 
     position: absolute;
-    top: 220px;
-    left: 900px;
+    top: 470px;
+    left: 760px;
 }
 
 .jogo img{
@@ -47,4 +53,9 @@ body{
     position: absolute;
     top: 100px;
     left: 600px;
+}
+
+.Sumario{
+    position: absolute;
+    top: 1000px;
 }
