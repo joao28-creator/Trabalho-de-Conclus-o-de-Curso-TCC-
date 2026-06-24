@@ -19,32 +19,32 @@
     <div>
         <img src="img/menu_jogos.png" alt="" class="menu_jogo">
 
+
+        <a href="qual-resultado.html" id="pag">
+
+                <img src="img/imagem_jogo-dourada.png" id="jogo">
+        </a>
+
         <script>
-        const dados = {
-            1: {
-                imagens: ["img/imagem_jogo-dourada.png","img/imagem_jogo-dourada.png","img/imagem_jogo-dourada.png"],
-                links: ["pagina1.html","pagina2.html","pagina3.html"],
-                i: 0
-            },
-            2: {
-                imagens: ["img/img2.png","img/img2b.png","img/img2c.png"],
-                links: ["qual-resultado.html","pagina5.html","pagina6.html"],
-                i: 0
+            const imgs = [
+                "img/imagem_jogo-dourada.png","img/imagem_jogo-prata.png","img/imagem_jogo-dourada.png"
+            ];
+
+            const pags = [
+                "qual-resultado.html","qual-resultado.html","qual-resultado.html"
+            ];
+
+            let i = 0;
+
+            function mudar_jogo(){
+                i = (i + 1) % imgs.length;
+
+                 document.getElementById("jogo").src = imgs[i];
+                 document.getElementById("pag").href = pags[i]
             }
-        };
-
-        function trocar(id){
-            const d = dados[id];
-
-            d.i = (d.i + 1) % d.imagens.length;
-
-            document.getElementById("img"+id).src = d.imagens[d.i];
-            document.getElementById("link"+id).href = d.links[d.i];
-        }
         </script>
 
-
-        <button onclick="mudar_imagem()" class="botão">
+        <button onclick="mudar_jogo()" class="botão">
             <img id="seta" src="img/seta.png" width="300">
 
         </button>
