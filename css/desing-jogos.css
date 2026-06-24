@@ -67,7 +67,14 @@ body{
     text-align: center;
 }
 
-.botão_sumario{
-    align-items: center;
-    ;
+.localizacao_sumario{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.localizacao_sumario button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
