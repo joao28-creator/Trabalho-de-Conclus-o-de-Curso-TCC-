@@ -1,0 +1,8 @@
+body{
+        background-image: url(../img/tela_f-jogos.jpeg);/*Imagem de fundo*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Centaur Now Caption;
+}
