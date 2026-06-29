@@ -8,6 +8,35 @@
 </head>
 <body>
 
+        <script>
+            const imgs = [
+                "img/imagem_jogo-dualidade.png",
+                "img/imagem_jogo-dualidade.png",
+                "img/imagem_jogo-dualidade.png"
+            ];
+
+            const pags = [
+                "quiz-matematico.html",
+                "quiz-matematico.html",
+                "quiz-matematico.html"
+            ];
+
+            let i = 0;
+
+            function mudar_jogo(){
+                i = (i + 1) % imgs.length;
+
+                 document.getElementById("jogo").src = imgs[i];
+                 document.getElementById("pag").href = pags[i]
+            }
+
+            function trocar(indice) {
+                document.getElementById("jogo").src = imgs[indice];
+                document.getElementById("pag").href = pags[indice];
+            }
+
+        </script>
+
     <header>
         <a href="Pagina_inicial.html" >
             <button class="logo">
@@ -18,24 +47,6 @@
     </header>
 
     <div>
-        <script>
-            imgs[
-                "img/imagem_jogo-dourada.png",
-                "img/imagem_jogo-dualidade.png",
-                "img/imagem_jogo-prata.png"
-            ];
-
-            const links = [
-                "quiz-matematico.html",
-                "quiz-matematico.html",
-                "quiz-matematico.html"
-            ];
-
-            function trocar(indice) {
-                document.getElementById("jogo").src = imgs[indice];
-                document.getElementById("pag").href = links[indice];
-            }
-        </script>
         <div class="localizacao_sumario">
             <h1>Sumario</h1>
 
@@ -50,27 +61,8 @@
 
         <a href="quiz-matematico.html" id="pag">
 
-                <img src="img/imagem_jogo-dourada.png" id="jogo">
+                <img src="img/imagem_jogo-dualidade.png" id="jogo">
         </a>
-
-        <script>
-            const imgs = [
-                "img/imagem_jogo-dourada.png","img/imagem_jogo-dualidade.png","img/imagem_jogo-prata.png"
-            ];
-
-            const pags = [
-                "quiz-matematico.html","quiz-matematico.html","quiz-matematico.html"
-            ];
-
-            let i = 0;
-
-            function mudar_jogo(){
-                i = (i + 1) % imgs.length;
-
-                 document.getElementById("jogo").src = imgs[i];
-                 document.getElementById("pag").href = pags[i]
-            }
-        </script>
 
         <button onclick="mudar_jogo()" class="botão">
             <img id="seta" src="img/seta.png" >
