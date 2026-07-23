@@ -1,37 +1,57 @@
-body{
-    background-image: url(../img/img-q.matematico/img_f-q.matematico.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
-    font-family: "Centaur Now Caption";
-    color: white;
+/*===========================
+       VIDEO QUE FICA  
+      EM LOOP NO FUNDO
+===========================*/
+.fundo-inicio { /*ARUUMA O VIDEO NO FUNDO DA IMAGEM*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+
+  z-index: -1;          /* fica atrás de tudo */
+  pointer-events: none; /* NÃO permite interação */
+  user-select: none;    /* não permite seleção */
+
+  color: white;
+  
+}
+/*===========================
+      IMAGEM E INFORMAÇÕES  
+        DURANTE O JOGO
+===========================*/
+.local-perguntas-alternativas{ /*IMAGEM ONDE FICA AS PERGUTAS, ALTERNATIVAS*/
+    position: absolute;
+    left: 520px;
+    top: 90px;
 }
 
-.logo{
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
-.logo img{
-    width: 225px;
-    height: auto;
-    position: absolute;
-    top: 1px;
-    left: 1px;
-}
-.botão{
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
-#local-perguntas{
-    position: absolute;
-    width: 550px;
-    left: 530px;
+.inicio-jogo{
+    left: 620px;
 }
 
-body{
+.meio-jogo{
+    left: 650px;
+}
+
+.final-jogo{
+    left: 690px;
+}
+
+.inicio-jogo,
+.meio-jogo,
+.final-jogo{
+    top: 150px;
+    position: absolute;
     text-align: center;
+}
+/*===========================
+          RESPOSTA
+       CERTA OU ERRADA
+===========================*/
+
+#mensagem{
+    
+    font-size: 50px;
 }

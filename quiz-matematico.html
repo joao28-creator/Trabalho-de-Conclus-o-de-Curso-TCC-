@@ -6,13 +6,20 @@
     <link rel="stylesheet" href="css/desing-quiz-matematico.css">
 </head>
 <body>
+    <div>
+        <video autoplay loop muted playsinline class="fundo-inicio">
+            <source src="video/video-f-q.matematica.mp4"
 
-    <header>
- 
-    </header>
+        </video>
+    </div>
+    logo
+
+    <div class="local-perguntas-alternativas">
+        <img src="img/img-q.matematico/local-perguntas-alternativas.png" alt="">
+    </div>
     
     <div id="conteudo"></div>
-
+    
     <script> /*PARET DO JAVASCRIPT*/
 
         /*VARIÁVEIS GLOBAIS*/
@@ -28,13 +35,17 @@
             pergunta = 1;
 
             document.getElementById("conteudo").innerHTML = `
-                <div class="inicio_jogo">
-                    <h1>Quiz Matemático</h1>
+                <div class="meio-jogo">
+                    
+                    <h1 class="informações-jogo">Quiz Matemático</h1>
                     <p id="info"></p>
                     <p id="conta"></p>
+
                     <div id="alternativas"></div>
-                    <p id="mensagem"></p>
                 </div>
+
+                    <p id="mensagem"></p>
+
             `;
 
             gerarPergunta();
@@ -130,7 +141,8 @@
                 vidas--;
 
                 document.getElementById("mensagem").innerHTML =
-                    "Resposta errada! A correta era: " +
+                    "Resposta errada!" +
+                    "A correta era: " +
                     respostaCorreta;
             }
 
@@ -142,7 +154,7 @@
 
                 gerarPergunta();
 
-            }, 1000);
+            }, 500000000000000);
         }
 
         function fimDeJogo() {
@@ -157,7 +169,7 @@
             }
 
             document.getElementById("conteudo").innerHTML = `
-            <div id="fim_jogo">
+            <div class="final-jogo">
                 <h1>Fim de Jogo</h1>
 
                 <p>${resultado}</p>
@@ -170,16 +182,12 @@
 
                 <br><br>
 
-                <a href="TrabalhoTCC.html">
-                    <button>
-                        HOME
-                    </button>
-                </a>
             </div>
             `;
         }
 
         document.getElementById("conteudo").innerHTML = `
+        <div class="inicio-jogo">
             <h1>Quiz Matemático</h1>
 
             <p>
@@ -190,6 +198,7 @@
             <button onclick="iniciarJogo()">
                 Iniciar Jogo
             </button>
+        </div>
         `;
     </script>
 
